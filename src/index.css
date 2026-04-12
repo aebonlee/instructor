@@ -1,0 +1,16 @@
+/* ============================================
+   AI Instructor - Main Stylesheet
+   ============================================ */
+
+@import './styles/base.css';
+@import './styles/navbar.css';
+@import './styles/hero.css';
+@import './styles/footer.css';
+@import './styles/course.css';
+@import './styles/topic.css';
+@import './styles/auth.css';
+@import './styles/mypage.css';
+@import './styles/admin.css';
+@import './styles/animations.css';
+@import './styles/dark-mode.css';
+@import './styles/responsive.css';

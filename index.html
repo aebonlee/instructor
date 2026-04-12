@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Instructor - AI 교육 강사 과정 안내</title>
+  <meta name="description" content="AI 교육 전문 강사를 위한 과정 안내 플랫폼. 프롬프트 엔지니어링, 생성형 AI, 데이터 분석, 업무 자동화 등 7개 카테고리 강의를 제공합니다." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://instructor.dreamitbiz.com/" />
+
+  <meta property="og:url" content="https://instructor.dreamitbiz.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AI Instructor - AI 교육 강사 과정 안내" />
+  <meta property="og:description" content="AI 교육 전문 강사를 위한 과정 안내 플랫폼. 프롬프트 엔지니어링부터 데이터 분석까지." />
+  <meta property="og:site_name" content="AI Instructor" />
+  <meta property="og:locale" content="ko_KR" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI Instructor - AI 교육 강사 과정 안내" />
+  <meta name="twitter:description" content="AI 교육 전문 강사를 위한 과정 안내 플랫폼." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect !== location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

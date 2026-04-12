@@ -1,0 +1,36 @@
+/* ============================================================
+   RESPONSIVE.CSS - Media Queries
+   ============================================================ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .section { padding: 60px 0; }
+  .section-title { font-size: 30px; }
+  .section-subtitle { font-size: 16px; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  :root { --nav-height: 64px; }
+  .container { padding: 0 16px; }
+  .section { padding: 48px 0; }
+  .section-header { margin-bottom: 40px; }
+  .section-title { font-size: 26px; }
+  .section-subtitle { font-size: 15px; }
+  .btn { padding: 10px 20px; font-size: 14px; }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .hero-actions { flex-direction: column; align-items: center; }
+  .hero-actions .btn { width: 100%; }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

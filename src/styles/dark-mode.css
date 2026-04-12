@@ -1,0 +1,40 @@
+/* ============================================================
+   DARK-MODE.CSS - Dark Theme Override
+   ============================================================ */
+[data-theme="dark"] {
+  --bg-white: #0F0D1A;
+  --bg-light: #1A1726;
+  --bg-medium: #252133;
+  --text-primary: #F3F4F6;
+  --text-secondary: #9CA3AF;
+  --text-light: #6B7280;
+  --border-light: #2D2940;
+  --border-medium: #3D3855;
+  --glass-bg: rgba(15,13,26,0.85);
+}
+
+[data-theme="dark"] .navbar { background: rgba(15,13,26,0.9); border-bottom-color: var(--border-light); }
+[data-theme="dark"] .category-card { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .category-card:hover { box-shadow: 0 20px 25px rgba(0,0,0,0.3); }
+[data-theme="dark"] .topic-card { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .auth-card { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .form-group input { background: var(--bg-white); border-color: var(--border-light); color: var(--text-primary); }
+[data-theme="dark"] .oauth-btn { background: var(--bg-white); border-color: var(--border-light); color: var(--text-primary); }
+[data-theme="dark"] .profile-card { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .mypage-content { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .admin-stat-card { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .admin-section { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .admin-table th { background: var(--bg-medium); }
+[data-theme="dark"] .outline-item { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .outline-item:hover { background: var(--bg-medium); }
+[data-theme="dark"] .keyword-tag { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .topic-download { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .topic-meta-item { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .related-card { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .download-item { background: var(--bg-medium); }
+[data-theme="dark"] .category-header { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .topic-hero { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .footer { background: #0A0818; }
+[data-theme="dark"] .nav-dropdown { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .nav-user-dropdown { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .footer-family select { background: rgba(255,255,255,0.05); }

@@ -1,0 +1,28 @@
+{
+  "name": "instructor",
+  "description": "AI 교육 강사를 위한 과정 안내 플랫폼",
+  "homepage": "https://instructor.dreamitbiz.com",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.99.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.13.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "gh-pages": "^6.3.0",
+    "typescript": "~5.7.0",
+    "vite": "^7.3.1"
+  }
+}
