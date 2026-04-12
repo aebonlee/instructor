@@ -73,6 +73,33 @@ export default function Navbar() {
               </div>
             </div>
           ))}
+
+          <div className="nav-item">
+            <Link to="/community" className="nav-link" style={{ cursor: 'pointer' }}>
+              {t('nav2.community')}
+            </Link>
+          </div>
+
+          <div className={`nav-item nav-more-dropdown${activeDropdown === 'more' ? ' open' : ''}`}>
+            <span className="nav-link" onClick={() => handleDropdown('more')}>
+              {t('nav2.more')}
+              <i className="fa-solid fa-chevron-down" />
+            </span>
+            <div className="nav-dropdown">
+              <Link to="/about" className="dropdown-item">
+                <i className="fa-solid fa-user-tie" style={{ marginRight: 8, width: 16 }} />
+                {t('nav2.about')}
+              </Link>
+              <Link to="/faq" className="dropdown-item">
+                <i className="fa-solid fa-circle-question" style={{ marginRight: 8, width: 16 }} />
+                {t('nav2.faq')}
+              </Link>
+              <Link to="/schedule" className="dropdown-item">
+                <i className="fa-regular fa-calendar" style={{ marginRight: 8, width: 16 }} />
+                {t('nav2.schedule')}
+              </Link>
+            </div>
+          </div>
         </div>
 
         <div className="nav-actions">

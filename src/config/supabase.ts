@@ -9,6 +9,9 @@ export const TABLES = {
   USERS: `${TABLE_PREFIX}users`,
   DOWNLOADS: `${TABLE_PREFIX}downloads`,
   VISITS: `${TABLE_PREFIX}visits`,
+  POSTS: `${TABLE_PREFIX}posts`,
+  COMMENTS: `${TABLE_PREFIX}comments`,
+  SCHEDULES: `${TABLE_PREFIX}schedules`,
 }
 
 export const supabase = (supabaseUrl && supabaseAnonKey)

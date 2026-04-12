@@ -43,3 +43,29 @@
 [data-theme="dark"] .topic-tab-btn { background: var(--bg-light); border-color: var(--border-light); color: var(--text-secondary); }
 [data-theme="dark"] .topic-tab-btn.active { background: var(--primary); color: white; }
 [data-theme="dark"] .learning-section { background: var(--bg-light); border-color: var(--border-light); }
+
+/* Community Dark Mode */
+[data-theme="dark"] .board-card { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .board-card:hover { box-shadow: 0 20px 25px rgba(0,0,0,0.3); }
+[data-theme="dark"] .post-table th { background: var(--bg-medium); }
+[data-theme="dark"] .post-table tbody tr:hover { background: var(--bg-medium); }
+[data-theme="dark"] .post-detail { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .post-form { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .post-form-group input,
+[data-theme="dark"] .post-form-group textarea { background: var(--bg-white); border-color: var(--border-light); color: var(--text-primary); }
+[data-theme="dark"] .post-nav a { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .comment-item { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .comment-form textarea { background: var(--bg-white); border-color: var(--border-light); color: var(--text-primary); }
+[data-theme="dark"] .board-search input { background: var(--bg-white); border-color: var(--border-light); color: var(--text-primary); }
+[data-theme="dark"] .pagination button { background: var(--bg-light); border-color: var(--border-light); color: var(--text-secondary); }
+[data-theme="dark"] .pagination button.active { background: var(--primary); color: white; border-color: var(--primary); }
+[data-theme="dark"] .about-section { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .about-stat-card { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .about-contact { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .about-avatar { background: var(--gradient-primary); }
+[data-theme="dark"] .faq-item { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .faq-question:hover { background: var(--bg-medium); }
+[data-theme="dark"] .schedule-card { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .schedule-date-box { background: var(--bg-medium); }
+[data-theme="dark"] .schedule-tab { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .schedule-tab.active { background: var(--primary); border-color: var(--primary); }

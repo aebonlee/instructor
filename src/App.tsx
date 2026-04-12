@@ -15,6 +15,13 @@ const Register = lazy(() => import('./pages/Register'))
 const ForgotPassword = lazy(() => import('./pages/ForgotPassword'))
 const MyPage = lazy(() => import('./pages/MyPage'))
 const AdminPage = lazy(() => import('./pages/AdminPage'))
+const CommunityPage = lazy(() => import('./pages/CommunityPage'))
+const BoardPage = lazy(() => import('./pages/BoardPage'))
+const PostWritePage = lazy(() => import('./pages/PostWritePage'))
+const PostDetailPage = lazy(() => import('./pages/PostDetailPage'))
+const AboutPage = lazy(() => import('./pages/AboutPage'))
+const FaqPage = lazy(() => import('./pages/FaqPage'))
+const SchedulePage = lazy(() => import('./pages/SchedulePage'))
 
 function PageLoader() {
   return (
@@ -66,6 +73,14 @@ function AppLayout() {
           <Route path="/forgot-password" element={<LazyRoute element={<ForgotPassword />} />} />
           <Route path="/my" element={<LazyRoute element={<MyPage />} />} />
           <Route path="/admin" element={<AdminRoute><LazyRoute element={<AdminPage />} /></AdminRoute>} />
+          <Route path="/about" element={<LazyRoute element={<AboutPage />} />} />
+          <Route path="/faq" element={<LazyRoute element={<FaqPage />} />} />
+          <Route path="/schedule" element={<LazyRoute element={<SchedulePage />} />} />
+          <Route path="/community" element={<LazyRoute element={<CommunityPage />} />} />
+          <Route path="/community/:boardSlug" element={<LazyRoute element={<BoardPage />} />} />
+          <Route path="/community/:boardSlug/write" element={<LazyRoute element={<PostWritePage />} />} />
+          <Route path="/community/:boardSlug/:postId/edit" element={<LazyRoute element={<PostWritePage />} />} />
+          <Route path="/community/:boardSlug/:postId" element={<LazyRoute element={<PostDetailPage />} />} />
           <Route path="/:categorySlug" element={<LazyRoute element={<CategoryPage />} />} />
           <Route path="/:categorySlug/:topicSlug" element={<LazyRoute element={<TopicPage />} />} />
           <Route path="*" element={<NotFoundPage />} />

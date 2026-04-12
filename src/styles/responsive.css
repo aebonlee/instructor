@@ -26,6 +26,33 @@
   .hero-actions .btn { width: 100%; }
 }
 
+/* Community Tablet */
+@media (max-width: 1024px) {
+  .board-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+  .about-profile { gap: 24px; }
+}
+
+/* Community Mobile */
+@media (max-width: 768px) {
+  .community-hero, .about-hero, .faq-hero, .schedule-hero { padding: 40px 0 32px; }
+  .community-hero h1, .about-hero h1, .faq-hero h1, .schedule-hero h1 { font-size: 28px; }
+  .board-grid { grid-template-columns: 1fr; padding: 32px 0; }
+  .board-header { flex-direction: column; align-items: flex-start; }
+  .post-table .col-author, .post-table .col-views { display: none; }
+  .post-detail-header { padding: 20px; }
+  .post-detail-header h1 { font-size: 20px; }
+  .post-detail-body { padding: 20px; }
+  .post-detail-actions { padding: 12px 20px; }
+  .post-form { padding: 20px; }
+  .post-nav { flex-direction: column; }
+  .comment-form { flex-direction: column; }
+  .about-avatar { width: 140px; height: 140px; font-size: 48px; }
+  .about-stats { grid-template-columns: repeat(2, 1fr); }
+  .schedule-card { flex-direction: column; gap: 12px; }
+  .schedule-date-box { width: 100%; display: flex; gap: 8px; align-items: center; justify-content: center; padding: 8px; }
+  .schedule-date-box .day { font-size: 20px; }
+}
+
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
