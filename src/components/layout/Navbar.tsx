@@ -55,6 +55,12 @@ export default function Navbar() {
         </Link>
 
         <div className={`nav-menu${mobileOpen ? ' mobile-open' : ''}`}>
+          <div className="nav-item">
+            <Link to="/about" className="nav-link" style={{ cursor: 'pointer' }}>
+              {t('nav2.about')}
+            </Link>
+          </div>
+
           {categories.map(cat => (
             <div key={cat.id} className={`nav-item${activeDropdown === cat.id ? ' open' : ''}`}>
               <span className="nav-link" onClick={() => handleDropdown(cat.id)}>
@@ -86,10 +92,6 @@ export default function Navbar() {
               <i className="fa-solid fa-chevron-down" />
             </span>
             <div className="nav-dropdown">
-              <Link to="/about" className="dropdown-item">
-                <i className="fa-solid fa-user-tie" style={{ marginRight: 8, width: 16 }} />
-                {t('nav2.about')}
-              </Link>
               <Link to="/faq" className="dropdown-item">
                 <i className="fa-solid fa-circle-question" style={{ marginRight: 8, width: 16 }} />
                 {t('nav2.faq')}
