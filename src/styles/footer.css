@@ -2,7 +2,7 @@
    FOOTER.CSS - Footer
    ============================================================ */
 .footer {
-  background: #1E1B4B; color: rgba(255,255,255,0.8); padding: 64px 0 32px;
+  background: #0F1D2F; color: rgba(255,255,255,0.8); padding: 64px 0 32px;
 }
 .footer-grid {
   display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; margin-bottom: 48px;

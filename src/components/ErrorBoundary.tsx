@@ -18,7 +18,7 @@ export default class ErrorBoundary extends Component<Props, State> {
           <p style={{ color: '#6B7280', marginBottom: 20 }}>{this.state.error?.message}</p>
           <button
             onClick={() => { this.setState({ hasError: false, error: null }); window.location.href = '/' }}
-            style={{ padding: '10px 24px', background: '#5B21B6', color: 'white', border: 'none', borderRadius: 8, cursor: 'pointer', fontWeight: 600 }}
+            style={{ padding: '10px 24px', background: '#1E3A5F', color: 'white', border: 'none', borderRadius: 8, cursor: 'pointer', fontWeight: 600 }}
           >
             홈으로 돌아가기
           </button>

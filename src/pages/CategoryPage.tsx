@@ -1,6 +1,7 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
 import { useLanguage } from '../contexts/LanguageContext'
 import { findCategory } from '../data/courses'
+import Sidebar from '../components/Sidebar'
 import TopicCard from '../components/TopicCard'
 
 export default function CategoryPage() {
@@ -37,15 +38,16 @@ export default function CategoryPage() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
+      <div className="layout-with-sidebar">
+        <Sidebar category={category} />
+        <div className="sidebar-content">
           <div className="topics-grid stagger-children">
             {category.topics.map(topic => (
               <TopicCard key={topic.id} topic={topic} categorySlug={category.slug} color={category.color} />
             ))}
           </div>
         </div>
-      </section>
+      </div>
     </>
   )
 }

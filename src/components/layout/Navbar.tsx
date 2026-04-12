@@ -58,18 +58,15 @@ export default function Navbar() {
           {categories.map(cat => (
             <div key={cat.id} className={`nav-item${activeDropdown === cat.id ? ' open' : ''}`}>
               <span className="nav-link" onClick={() => handleDropdown(cat.id)}>
-                <i className={cat.icon} />
                 {localizedField(cat, 'title')}
                 <i className="fa-solid fa-chevron-down" />
               </span>
               <div className="nav-dropdown">
                 <Link to={`/${cat.slug}`} className="dropdown-item" style={{ fontWeight: 600, color: 'var(--primary)' }}>
-                  <i className="fa-solid fa-grid-2" />
-                  {t('category.title')} {localizedField(cat, 'title')}
+                  {localizedField(cat, 'title')} {t('home.viewAll')}
                 </Link>
                 {cat.topics.map(topic => (
                   <Link key={topic.id} to={`/${cat.slug}/${topic.slug}`} className="dropdown-item">
-                    <i className={topic.icon} />
                     {localizedField(topic, 'title')}
                   </Link>
                 ))}
