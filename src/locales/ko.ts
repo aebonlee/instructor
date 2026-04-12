@@ -105,6 +105,23 @@ const ko = {
     copyright: '© 2026 AI Instructor. All rights reserved.',
     familySite: 'Family Site',
   },
+  siteIntro: {
+    title: '사이트 소개',
+    subtitle: 'AI Instructor 플랫폼 안내',
+    missionTitle: '플랫폼 소개',
+    missionDesc: 'AI Instructor는 생성형 AI, 프롬프트 엔지니어링, 디지털 마케팅, 강사 양성 등 다양한 AI 교육 과정을 제공하는 전문 교육 플랫폼입니다. 기업·기관·개인을 위한 맞춤형 교육과 강의안 다운로드, 커뮤니티 소통 기능을 한곳에서 이용할 수 있습니다.',
+    featuresTitle: '주요 기능',
+    features: [
+      { icon: 'fa-solid fa-book-open', title: '체계적 커리큘럼', desc: '4개 카테고리, 28개 강의 주제로 구성된 AI 교육 과정을 제공합니다.' },
+      { icon: 'fa-solid fa-download', title: '강의안 다운로드', desc: '로그인 후 각 과정의 PDF 강의안을 다운로드할 수 있습니다.' },
+      { icon: 'fa-solid fa-comments', title: '커뮤니티', desc: '공지사항, 자유게시판, 강의신청, 강의안 요청, 수강 후기 게시판을 운영합니다.' },
+      { icon: 'fa-solid fa-calendar-days', title: '강의 일정', desc: '예정된 강의 일정을 확인하고 강의를 신청할 수 있습니다.' },
+      { icon: 'fa-solid fa-globe', title: '한/영 다국어', desc: '한국어와 영어 모두 지원하여 글로벌 학습이 가능합니다.' },
+      { icon: 'fa-solid fa-moon', title: '다크모드', desc: '라이트/다크 테마를 지원하여 편안한 학습 환경을 제공합니다.' },
+    ],
+    coursesTitle: '교육 과정 안내',
+    quickLinksTitle: '바로가기',
+  },
   community: {
     title: '커뮤니티',
     subtitle: '강의 관련 소통 공간',
@@ -209,7 +226,8 @@ const ko = {
   },
   nav2: {
     community: '커뮤니티',
-    more: '더보기',
+    aboutMenu: '소개',
+    siteIntro: '사이트 소개',
     about: '강사 소개',
     faq: 'FAQ',
     schedule: '강의 일정',

@@ -19,6 +19,7 @@ const CommunityPage = lazy(() => import('./pages/CommunityPage'))
 const BoardPage = lazy(() => import('./pages/BoardPage'))
 const PostWritePage = lazy(() => import('./pages/PostWritePage'))
 const PostDetailPage = lazy(() => import('./pages/PostDetailPage'))
+const SiteIntroPage = lazy(() => import('./pages/SiteIntroPage'))
 const AboutPage = lazy(() => import('./pages/AboutPage'))
 const FaqPage = lazy(() => import('./pages/FaqPage'))
 const SchedulePage = lazy(() => import('./pages/SchedulePage'))
@@ -73,6 +74,7 @@ function AppLayout() {
           <Route path="/forgot-password" element={<LazyRoute element={<ForgotPassword />} />} />
           <Route path="/my" element={<LazyRoute element={<MyPage />} />} />
           <Route path="/admin" element={<AdminRoute><LazyRoute element={<AdminPage />} /></AdminRoute>} />
+          <Route path="/site-intro" element={<LazyRoute element={<SiteIntroPage />} />} />
           <Route path="/about" element={<LazyRoute element={<AboutPage />} />} />
           <Route path="/faq" element={<LazyRoute element={<FaqPage />} />} />
           <Route path="/schedule" element={<LazyRoute element={<SchedulePage />} />} />
