@@ -101,8 +101,11 @@ const en = {
     desc: 'Course guide platform for AI education instructors',
     quickLinks: 'Quick Links',
     contact: 'Contact',
-    email: 'aebonlee@gmail.com',
-    copyright: '© 2026 AI Instructor. All rights reserved.',
+    email: 'aebon@dreamitbiz.com',
+    hours: 'Weekdays 09:00 ~ 18:00',
+    copyright: '© 2026 DreamIT Biz. All rights reserved.',
+    ceo: 'CEO: Aebon Lee',
+    bizNo: 'Business No: 601-45-20154',
     familySite: 'Family Site',
   },
   siteIntro: {

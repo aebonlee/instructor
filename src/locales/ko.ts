@@ -101,8 +101,11 @@ const ko = {
     desc: 'AI 교육 전문 강사를 위한 과정 안내 플랫폼',
     quickLinks: '바로가기',
     contact: '연락처',
-    email: 'aebonlee@gmail.com',
-    copyright: '© 2026 AI Instructor. All rights reserved.',
+    email: 'aebon@dreamitbiz.com',
+    hours: '평일 09:00 ~ 18:00',
+    copyright: '© 2026 드림아이티비즈(DreamIT Biz). All rights reserved.',
+    ceo: '대표이사: 이애본',
+    bizNo: '사업자등록번호: 601-45-20154',
     familySite: 'Family Site',
   },
   siteIntro: {
