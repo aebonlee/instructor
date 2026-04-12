@@ -159,6 +159,13 @@ const en = {
       'Ph.D Candidate in Vocational Studies (Employment Policy, Vocational Education & Training)',
       'M.S. in Information Science (B.S., B.B.A., B.A.)',
     ],
+    certifications: 'Certifications',
+    certificationList: [
+      'Lifelong Educator Level 2',
+      'Korean Language Instructor Level 2',
+      'Vocational Training Instructor Level 2/3 — All certifications in 20. ICT representative occupations (AI, Information Security, etc.)',
+      '80+ national technical & certified qualifications including Industrial Engineer Information Processing',
+    ],
     stats: 'Lecture Statistics',
     statItems: { lectures: 'Total Lectures', hours: 'Total Hours', satisfaction: 'Avg. Satisfaction', organizations: 'Organizations' },
     statValues: { lectures: '500+', hours: '3,000+', satisfaction: '4.9/5.0', organizations: '100+' },

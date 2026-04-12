@@ -159,6 +159,13 @@ const ko = {
       '직업학박사 수료 (고용정책, 직업교육훈련 전공)',
       '정보과학 석사 (이학석사, 이학사, 경영학사, 문학사)',
     ],
+    certifications: '자격',
+    certificationList: [
+      '평생교육사 2급',
+      '한국어교원 2급',
+      '직업능력개발훈련교사 2급/3급 — 20.정보통신 대표 직종 모든 자격 보유 (인공지능, 정보보호 외 다수)',
+      '정보처리산업기사 외 국가기술자격, 공인자격 등 80여 가지 취득',
+    ],
     stats: '강의 실적',
     statItems: { lectures: '누적 강의', hours: '총 강의시간', satisfaction: '평균 만족도', organizations: '교육 기관' },
     statValues: { lectures: '500+', hours: '3,000+', satisfaction: '4.9/5.0', organizations: '100+' },

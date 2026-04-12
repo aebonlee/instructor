@@ -6,6 +6,7 @@ export default function AboutPage() {
   const specialties = t('about.specialtyList') as unknown as string[]
   const careers = t('about.careerList') as unknown as string[]
   const educations = t('about.educationList') as unknown as string[]
+  const certifications = t('about.certificationList') as unknown as string[]
   const statItems = t('about.statItems') as unknown as Record<string, string>
   const statValues = t('about.statValues') as unknown as Record<string, string>
 
@@ -47,7 +48,7 @@ export default function AboutPage() {
           ))}
         </div>
 
-        {/* Career & Education */}
+        {/* Career, Education & Certifications */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 24, marginBottom: 24 }}>
           <div className="about-section">
             <h3><i className="fa-solid fa-briefcase" /> {t('about.career')}</h3>
@@ -59,6 +60,12 @@ export default function AboutPage() {
             <h3><i className="fa-solid fa-graduation-cap" /> {t('about.education')}</h3>
             <ul>
               {educations.map((item, i) => <li key={i}>{item}</li>)}
+            </ul>
+          </div>
+          <div className="about-section">
+            <h3><i className="fa-solid fa-certificate" /> {t('about.certifications')}</h3>
+            <ul>
+              {certifications.map((item, i) => <li key={i}>{item}</li>)}
             </ul>
           </div>
         </div>
