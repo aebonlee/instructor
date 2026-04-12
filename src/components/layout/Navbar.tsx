@@ -61,22 +61,10 @@ export default function Navbar() {
               <i className="fa-solid fa-chevron-down" />
             </span>
             <div className="nav-dropdown">
-              <Link to="/site-intro" className="dropdown-item">
-                <i className="fa-solid fa-house" style={{ marginRight: 8, width: 16 }} />
-                {t('nav2.siteIntro')}
-              </Link>
-              <Link to="/about" className="dropdown-item">
-                <i className="fa-solid fa-user-tie" style={{ marginRight: 8, width: 16 }} />
-                {t('nav2.about')}
-              </Link>
-              <Link to="/faq" className="dropdown-item">
-                <i className="fa-solid fa-circle-question" style={{ marginRight: 8, width: 16 }} />
-                {t('nav2.faq')}
-              </Link>
-              <Link to="/schedule" className="dropdown-item">
-                <i className="fa-regular fa-calendar" style={{ marginRight: 8, width: 16 }} />
-                {t('nav2.schedule')}
-              </Link>
+              <Link to="/site-intro" className="dropdown-item">{t('nav2.siteIntro')}</Link>
+              <Link to="/about" className="dropdown-item">{t('nav2.about')}</Link>
+              <Link to="/faq" className="dropdown-item">{t('nav2.faq')}</Link>
+              <Link to="/schedule" className="dropdown-item">{t('nav2.schedule')}</Link>
             </div>
           </div>
 

@@ -226,7 +226,7 @@ const ko = {
   },
   nav2: {
     community: '커뮤니티',
-    aboutMenu: '소개',
+    aboutMenu: 'About',
     siteIntro: '사이트 소개',
     about: '강사 소개',
     faq: 'FAQ',
