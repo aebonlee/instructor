@@ -3,9 +3,16 @@
    ============================================================ */
 .navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-  height: var(--nav-height); background: var(--glass-bg);
-  backdrop-filter: blur(var(--glass-blur)); border-bottom: 1px solid var(--border-light);
+  height: var(--nav-height);
+  border-bottom: 1px solid var(--border-light);
   transition: var(--transition);
+}
+/* backdrop-filter를 ::before로 분리 — navbar가 containing block을 생성하지 않도록 */
+.navbar::before {
+  content: ''; position: absolute; inset: 0;
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur)); -webkit-backdrop-filter: blur(var(--glass-blur));
+  z-index: -1;
 }
 .navbar.scrolled { box-shadow: var(--shadow-md); }
 .navbar .container { display: flex; align-items: center; justify-content: space-between; height: 100%; }
@@ -94,9 +101,10 @@
 .mobile-toggle { display: none; width: 40px; height: 40px; border-radius: var(--radius-sm); color: var(--text-primary); font-size: 20px; }
 .mobile-toggle:hover { background: var(--bg-medium); }
 
-/* Overlay */
+/* Overlay — explicit height to avoid backdrop-filter containing block */
 .mobile-overlay {
-  position: fixed; inset: 0; top: var(--nav-height);
+  position: fixed; top: var(--nav-height); left: 0;
+  width: 100%; height: calc(100vh - var(--nav-height));
   background: rgba(0,0,0,0.5); z-index: 998;
   opacity: 0; animation: overlayFadeIn 0.3s ease forwards;
 }
@@ -105,10 +113,11 @@
 @media (max-width: 1024px) {
   .mobile-toggle { display: flex; align-items: center; justify-content: center; }
 
-  /* Slide-in menu */
+  /* Slide-in menu — explicit height to avoid backdrop-filter containing block */
   .nav-menu {
     display: flex; flex-direction: column; position: fixed; top: var(--nav-height);
-    right: 0; bottom: 0; width: 300px; max-width: 85vw;
+    right: 0; width: 300px; max-width: 85vw;
+    height: calc(100vh - var(--nav-height));
     background: var(--bg-white); padding: 20px; gap: 4px;
     overflow-y: auto; z-index: 999;
     visibility: hidden; transform: translateX(100%);
@@ -130,6 +139,7 @@
     max-height: 0; overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
     opacity: 1; visibility: visible;
+    backdrop-filter: none; -webkit-backdrop-filter: none;
   }
   .nav-menu .nav-item.open .nav-dropdown {
     max-height: 600px; padding: 4px 0 4px 12px;

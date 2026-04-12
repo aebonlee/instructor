@@ -13,7 +13,7 @@
   --glass-bg: rgba(11,17,32,0.9);
 }
 
-[data-theme="dark"] .navbar { background: rgba(11,17,32,0.9); border-bottom-color: var(--border-light); }
+[data-theme="dark"] .navbar::before { background: rgba(11,17,32,0.9); }
 [data-theme="dark"] .category-card { background: var(--bg-light); border-color: var(--border-light); }
 [data-theme="dark"] .category-card:hover { box-shadow: 0 20px 25px rgba(0,0,0,0.3); }
 [data-theme="dark"] .topic-card { background: var(--bg-light); border-color: var(--border-light); }
