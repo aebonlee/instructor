@@ -235,6 +235,15 @@ const ko = {
     viewAll: '전체 보기',
     sectionTitle: '관련 학습 사이트',
     sectionDesc: '이 카테고리와 관련된 DreamIT 사이트를 확인하세요',
+    paidBadge: '유료',
+    paidNoticeTitle: '유료 교육 서비스 안내',
+    paidNoticeDesc: '아래 사이트들은 DreamIT Biz에서 운영하는 유료 교육 플랫폼입니다. 각 사이트는 전문 교육 콘텐츠와 강의안을 제공하며, 이용 시 요금이 발생합니다.',
+    paidNoticeItems: [
+      '사이트별 월 구독 또는 개별 강좌 결제',
+      '통합 결제는 edu-hub.dreamitbiz.com에서 가능',
+      '신규 가입 시 7일 무료 체험 쿠폰 제공',
+      '연간 결제 시 약 17% 할인 혜택',
+    ],
   },
   nav2: {
     community: '커뮤니티',

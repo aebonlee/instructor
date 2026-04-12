@@ -24,6 +24,14 @@
 @media (max-width: 480px) {
   .hero-actions { flex-direction: column; align-items: center; }
   .hero-actions .btn { width: 100%; }
+  .hero-title { font-size: 28px; }
+  .hero-subtitle { font-size: 14px; }
+  .hero-badge { font-size: 12px; padding: 6px 14px; }
+  .hero-stat-value { font-size: 24px; }
+  .related-sites-hero h1 { font-size: 24px; }
+  .related-sites-hero p { font-size: 14px; }
+  .rs-paid-notice { padding: 16px; }
+  .rs-paid-notice-header h2 { font-size: 16px; }
 }
 
 /* Community Tablet */

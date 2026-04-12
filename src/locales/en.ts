@@ -235,6 +235,15 @@ const en = {
     viewAll: 'View All',
     sectionTitle: 'Related Learning Sites',
     sectionDesc: 'Explore DreamIT sites related to this category',
+    paidBadge: 'Paid',
+    paidNoticeTitle: 'Paid Education Service Notice',
+    paidNoticeDesc: 'The sites below are paid education platforms operated by DreamIT Biz. Each site provides professional educational content and lecture materials, and fees apply for usage.',
+    paidNoticeItems: [
+      'Monthly subscription or individual course payment per site',
+      'Integrated payment available at edu-hub.dreamitbiz.com',
+      '7-day free trial coupon for new sign-ups',
+      'Approximately 17% discount for annual payments',
+    ],
   },
   nav2: {
     community: 'Community',

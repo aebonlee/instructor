@@ -76,3 +76,13 @@
 [data-theme="dark"] .related-site-card.featured { background: linear-gradient(135deg, rgba(59,130,246,0.08), rgba(139,92,246,0.08)); border-color: rgba(59,130,246,0.2); }
 [data-theme="dark"] .related-site-card-icon { background: var(--bg-medium); }
 [data-theme="dark"] .related-site-card-visit { background: var(--bg-medium); }
+[data-theme="dark"] .rs-paid-notice { background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(217,119,6,0.08)); border-color: rgba(245,158,11,0.3); }
+[data-theme="dark"] .rs-paid-notice-header h2 { color: #FBBF24; }
+[data-theme="dark"] .rs-paid-notice-desc { color: #FCD34D; }
+[data-theme="dark"] .rs-paid-notice-list li { color: #FCD34D; }
+[data-theme="dark"] .rs-paid-badge { background: #D97706; }
+[data-theme="dark"] .rs-site-card { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .rs-site-card:hover { box-shadow: 0 20px 25px rgba(0,0,0,0.3); }
+
+/* Mobile overlay dark mode */
+[data-theme="dark"] .mobile-overlay { background: rgba(0,0,0,0.7); }

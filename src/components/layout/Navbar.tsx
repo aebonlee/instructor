@@ -30,6 +30,11 @@ export default function Navbar() {
   }, [location])
 
   useEffect(() => {
+    document.body.style.overflow = mobileOpen ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
+  }, [mobileOpen])
+
+  useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (userMenuRef.current && !userMenuRef.current.contains(e.target as Node)) {
         setUserMenuOpen(false)
@@ -54,6 +59,7 @@ export default function Navbar() {
           <span className="brand-instructor">Instructor</span>
         </Link>
 
+        {mobileOpen && <div className="mobile-overlay" onClick={() => setMobileOpen(false)} />}
         <div className={`nav-menu${mobileOpen ? ' mobile-open' : ''}`}>
           <div className={`nav-item nav-more-dropdown${activeDropdown === 'about-menu' ? ' open' : ''}`}>
             <span className="nav-link" onClick={() => handleDropdown('about-menu')}>
