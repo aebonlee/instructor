@@ -69,3 +69,10 @@
 [data-theme="dark"] .schedule-date-box { background: var(--bg-medium); }
 [data-theme="dark"] .schedule-tab { background: var(--bg-light); border-color: var(--border-light); }
 [data-theme="dark"] .schedule-tab.active { background: var(--primary); border-color: var(--primary); }
+
+/* Related Sites Dark Mode */
+[data-theme="dark"] .related-site-card { background: var(--bg-light); border-color: var(--border-light); }
+[data-theme="dark"] .related-site-card:hover { box-shadow: 0 20px 25px rgba(0,0,0,0.3); }
+[data-theme="dark"] .related-site-card.featured { background: linear-gradient(135deg, rgba(59,130,246,0.08), rgba(139,92,246,0.08)); border-color: rgba(59,130,246,0.2); }
+[data-theme="dark"] .related-site-card-icon { background: var(--bg-medium); }
+[data-theme="dark"] .related-site-card-visit { background: var(--bg-medium); }

@@ -23,6 +23,7 @@ const SiteIntroPage = lazy(() => import('./pages/SiteIntroPage'))
 const AboutPage = lazy(() => import('./pages/AboutPage'))
 const FaqPage = lazy(() => import('./pages/FaqPage'))
 const SchedulePage = lazy(() => import('./pages/SchedulePage'))
+const RelatedSitesPage = lazy(() => import('./pages/RelatedSitesPage'))
 
 function PageLoader() {
   return (
@@ -78,6 +79,7 @@ function AppLayout() {
           <Route path="/about" element={<LazyRoute element={<AboutPage />} />} />
           <Route path="/faq" element={<LazyRoute element={<FaqPage />} />} />
           <Route path="/schedule" element={<LazyRoute element={<SchedulePage />} />} />
+          <Route path="/related-sites" element={<LazyRoute element={<RelatedSitesPage />} />} />
           <Route path="/community" element={<LazyRoute element={<CommunityPage />} />} />
           <Route path="/community/:boardSlug" element={<LazyRoute element={<BoardPage />} />} />
           <Route path="/community/:boardSlug/write" element={<LazyRoute element={<PostWritePage />} />} />

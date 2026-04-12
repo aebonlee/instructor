@@ -3,6 +3,7 @@ import { useLanguage } from '../contexts/LanguageContext'
 import { findCategory } from '../data/courses'
 import Sidebar from '../components/Sidebar'
 import TopicCard from '../components/TopicCard'
+import RelatedSitesSection from '../components/RelatedSitesSection'
 
 export default function CategoryPage() {
   const { categorySlug } = useParams<{ categorySlug: string }>()
@@ -46,6 +47,7 @@ export default function CategoryPage() {
               <TopicCard key={topic.id} topic={topic} categorySlug={category.slug} color={category.color} />
             ))}
           </div>
+          <RelatedSitesSection categorySlug={category.slug} />
         </div>
       </div>
     </>

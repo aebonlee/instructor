@@ -63,6 +63,7 @@ export default function Navbar() {
             <div className="nav-dropdown">
               <Link to="/site-intro" className="dropdown-item">{t('nav2.siteIntro')}</Link>
               <Link to="/about" className="dropdown-item">{t('nav2.about')}</Link>
+              <Link to="/related-sites" className="dropdown-item">{t('nav2.relatedSites')}</Link>
               <Link to="/faq" className="dropdown-item">{t('nav2.faq')}</Link>
               <Link to="/schedule" className="dropdown-item">{t('nav2.schedule')}</Link>
             </div>
