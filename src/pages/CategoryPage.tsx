@@ -12,8 +12,6 @@ export default function CategoryPage() {
   const category = findCategory(categorySlug || '')
   if (!category) return <Navigate to="/" replace />
 
-  const catHours = category.topics.reduce((s, tp) => s + tp.hours, 0)
-
   return (
     <>
       <section className="category-header">
@@ -32,7 +30,6 @@ export default function CategoryPage() {
               <p>{localizedField(category, 'description')}</p>
               <div className="category-meta" style={{ marginTop: 12 }}>
                 <span><i className="fa-solid fa-list" />{category.topics.length} {t('category.topics')}</span>
-                <span><i className="fa-regular fa-clock" />{catHours}{t('category.hours')}</span>
               </div>
             </div>
           </div>

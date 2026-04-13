@@ -69,10 +69,6 @@ export default function TopicPage() {
             <p className="topic-hero-desc">{localizedField(topic, 'description')}</p>
             <div className="topic-meta-bar">
               <div className="topic-meta-item">
-                <i className="fa-regular fa-clock" />
-                {topic.hours}{t('topic.hours')}
-              </div>
-              <div className="topic-meta-item">
                 <i className={category.icon} />
                 {localizedField(category, 'title')}
               </div>

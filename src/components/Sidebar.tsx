@@ -25,7 +25,6 @@ export default function Sidebar({ category, activeTopicSlug }: Props) {
             className={`sidebar-item${activeTopicSlug === topic.slug ? ' active' : ''}`}
           >
             <span className="sidebar-item-text">{localizedField(topic, 'title')}</span>
-            <span className="sidebar-item-hours">{topic.hours}{t('category.hours')}</span>
           </NavLink>
         ))}
       </nav>

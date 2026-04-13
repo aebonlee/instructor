@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../contexts/LanguageContext'
-import { categories, totalTopics, totalHours } from '../data/courses'
+import { categories, totalTopics } from '../data/courses'
 
 export default function Home() {
   const { t, localizedField } = useLanguage()
@@ -35,10 +35,6 @@ export default function Home() {
               <div className="hero-stat-label">{t('stats.topics')}</div>
             </div>
             <div className="hero-stat">
-              <div className="hero-stat-value">{totalHours}+</div>
-              <div className="hero-stat-label">{t('stats.hours')}</div>
-            </div>
-            <div className="hero-stat">
               <div className="hero-stat-value">98%</div>
               <div className="hero-stat-label">{t('stats.satisfaction')}</div>
             </div>
@@ -54,9 +50,7 @@ export default function Home() {
             <p className="section-subtitle">{t('home.categoriesSubtitle')}</p>
           </div>
           <div className="categories-grid stagger-children">
-            {categories.map(cat => {
-              const catHours = cat.topics.reduce((s, tp) => s + tp.hours, 0)
-              return (
+            {categories.map(cat => (
                 <Link key={cat.id} to={`/${cat.slug}`} className="category-card animate-fade-in-up" style={{ '--card-color': cat.color } as React.CSSProperties}>
                   <div className="category-icon" style={{ background: cat.color }}>
                     <i className={cat.icon} />
@@ -65,14 +59,12 @@ export default function Home() {
                   <p>{localizedField(cat, 'description')}</p>
                   <div className="category-meta">
                     <span><i className="fa-solid fa-list" />{cat.topics.length}{t('home.topicsCount')}</span>
-                    <span><i className="fa-regular fa-clock" />{catHours}{t('category.hours')}</span>
                   </div>
                   <span className="category-link">
                     {t('home.viewAll')} <i className="fa-solid fa-arrow-right" />
                   </span>
                 </Link>
-              )
-            })}
+              ))}
           </div>
         </div>
       </section>

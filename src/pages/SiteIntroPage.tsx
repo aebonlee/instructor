@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../contexts/LanguageContext'
-import { categories, totalTopics, totalHours } from '../data/courses'
+import { categories, totalTopics } from '../data/courses'
 
 export default function SiteIntroPage() {
   const { t, localizedField } = useLanguage()
@@ -33,10 +33,6 @@ export default function SiteIntroPage() {
           <div className="about-stat-card">
             <div className="stat-value">{totalTopics}</div>
             <div className="stat-label">{t('stats.topics')}</div>
-          </div>
-          <div className="about-stat-card">
-            <div className="stat-value">{totalHours}+</div>
-            <div className="stat-label">{t('stats.hours')}</div>
           </div>
           <div className="about-stat-card">
             <div className="stat-value">98%</div>
@@ -73,7 +69,7 @@ export default function SiteIntroPage() {
               <h3 style={{ fontSize: 17 }}>{localizedField(cat, 'title')}</h3>
               <p style={{ fontSize: 13 }}>{localizedField(cat, 'description')}</p>
               <span style={{ fontSize: 13, color: 'var(--text-light)' }}>
-                {cat.topics.length}{t('home.topicsCount')} · {cat.topics.reduce((s, tp) => s + tp.hours, 0)}{t('category.hours')}
+                {cat.topics.length}{t('home.topicsCount')}
               </span>
             </Link>
           ))}

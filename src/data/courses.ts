@@ -6,7 +6,6 @@ export interface Topic {
   description: string
   descriptionEn: string
   icon: string
-  hours: number
   keywords: string[]
   keywordsEn: string[]
   outline: string[]
@@ -45,7 +44,6 @@ export const categories: Category[] = [
         description: '효과적인 AI 활용을 위한 프롬프트 작성 기초. Zero-shot, Few-shot, 역할 지정 등 핵심 기법을 실습하며 AI와 소통하는 역량을 키웁니다.',
         descriptionEn: 'Fundamentals of prompt writing for effective AI use. Practice core techniques like Zero-shot, Few-shot, and role assignment.',
         icon: 'fa-solid fa-wand-magic-sparkles',
-        hours: 6,
         keywords: ['Zero-shot', 'Few-shot', '역할 지정', '프롬프트 구조', 'AI 소통'],
         keywordsEn: ['Zero-shot', 'Few-shot', 'Role Assignment', 'Prompt Structure', 'AI Communication'],
         outline: [
@@ -73,7 +71,6 @@ export const categories: Category[] = [
         description: 'AI 활용 시 반드시 알아야 할 윤리적 기준과 법적 쟁점을 다룹니다. 저작권, 개인정보, 편향성 이슈와 조직별 AI 사용 가이드라인 수립 방법을 학습합니다.',
         descriptionEn: 'Covers essential ethical standards and legal issues in AI usage including copyright, privacy, bias, and organizational guidelines.',
         icon: 'fa-solid fa-scale-balanced',
-        hours: 4,
         keywords: ['AI 윤리', '저작권', '개인정보', '편향성', '가이드라인'],
         keywordsEn: ['AI Ethics', 'Copyright', 'Privacy', 'Bias', 'Guidelines'],
         outline: [
@@ -101,7 +98,6 @@ export const categories: Category[] = [
         description: '개인 맞춤형 AI 비서를 설계하고 구축하는 종합 실습 과정. 업무 자동화, 일정 관리, 정보 검색 기능을 통합하는 방법을 학습합니다.',
         descriptionEn: 'Comprehensive practice course for designing and building your personalized AI assistant with automation and search capabilities.',
         icon: 'fa-solid fa-user-gear',
-        hours: 8,
         keywords: ['AI 비서', '맞춤형', '워크플로우', '자동화', '종합 실습'],
         keywordsEn: ['AI Assistant', 'Customized', 'Workflow', 'Automation', 'Practice'],
         outline: [
@@ -143,7 +139,6 @@ export const categories: Category[] = [
         description: '복잡한 업무를 해결하기 위한 고급 프롬프트 설계 기법. 멀티 스텝 프롬프팅, 프롬프트 체이닝, 자동화 파이프라인 구축 방법을 다룹니다.',
         descriptionEn: 'Advanced prompt design techniques for complex tasks including multi-step prompting, chaining, and automation pipelines.',
         icon: 'fa-solid fa-layer-group',
-        hours: 6,
         keywords: ['멀티 스텝', '프롬프트 체이닝', '파이프라인', '자동화', '템플릿'],
         keywordsEn: ['Multi-step', 'Prompt Chaining', 'Pipeline', 'Automation', 'Templates'],
         outline: [
@@ -171,7 +166,6 @@ export const categories: Category[] = [
         description: '대용량 데이터를 효율적으로 분석하고 전문적인 보고서 구조를 설계하는 방법을 학습합니다.',
         descriptionEn: 'Learn to efficiently analyze large-scale data and design professional report structures.',
         icon: 'fa-solid fa-file-lines',
-        hours: 6,
         keywords: ['대용량 분석', '보고서', '데이터 구조화', '인사이트', 'AI 분석'],
         keywordsEn: ['Large-scale Analysis', 'Reports', 'Data Structuring', 'Insights', 'AI Analysis'],
         outline: [
@@ -199,7 +193,6 @@ export const categories: Category[] = [
         description: 'OpenAI GPTs를 활용하여 특정 업무에 최적화된 맞춤형 AI를 구축합니다. GPT Builder, 지식 업로드, API 연동 등 실전 기술을 다룹니다.',
         descriptionEn: 'Build custom AI optimized for specific tasks using OpenAI GPTs. Covers GPT Builder, knowledge upload, and API integration.',
         icon: 'fa-solid fa-puzzle-piece',
-        hours: 6,
         keywords: ['GPTs', 'GPT Builder', '맞춤형 AI', 'API 연동', '지식 업로드'],
         keywordsEn: ['GPTs', 'GPT Builder', 'Custom AI', 'API Integration', 'Knowledge Upload'],
         outline: [
@@ -227,7 +220,6 @@ export const categories: Category[] = [
         description: 'AI 도구를 활용하여 데이터를 발굴하고, 분석하며, 시각적으로 표현하는 전 과정을 학습합니다.',
         descriptionEn: 'Learn the entire process of discovering, analyzing, and visualizing data using AI tools.',
         icon: 'fa-solid fa-magnifying-glass-chart',
-        hours: 8,
         keywords: ['데이터 발굴', 'AI 분석', '시각화', '대시보드', '공공데이터'],
         keywordsEn: ['Data Discovery', 'AI Analysis', 'Visualization', 'Dashboard', 'Public Data'],
         outline: [
@@ -255,7 +247,6 @@ export const categories: Category[] = [
         description: 'AI 기반 협업 도구를 활용하여 팀 프로젝트를 효율적으로 운영하는 방법을 학습합니다.',
         descriptionEn: 'Learn to efficiently manage team projects using AI-based collaboration tools.',
         icon: 'fa-solid fa-people-group',
-        hours: 4,
         keywords: ['협업', 'Notion', 'Slack', '프로젝트 관리', 'AI 협업'],
         keywordsEn: ['Collaboration', 'Notion', 'Slack', 'Project Management', 'AI Collaboration'],
         outline: [
@@ -283,7 +274,6 @@ export const categories: Category[] = [
         description: 'AI 도구를 활용한 업무 자동화 방법과 기존 워크플로우에 AI를 연결하는 아이디어를 학습합니다.',
         descriptionEn: 'Learn business automation methods and ideas for integrating AI into existing workflows.',
         icon: 'fa-solid fa-arrows-spin',
-        hours: 6,
         keywords: ['자동화', '워크플로우', 'Zapier', 'Make', 'AI 연동'],
         keywordsEn: ['Automation', 'Workflow', 'Zapier', 'Make', 'AI Integration'],
         outline: [
@@ -311,7 +301,6 @@ export const categories: Category[] = [
         description: 'AI를 활용하여 기존 업무 프로세스를 개선하는 방법을 실제 사례를 통해 학습합니다.',
         descriptionEn: 'Learn how to improve existing business processes using AI through real case studies.',
         icon: 'fa-solid fa-diagram-project',
-        hours: 4,
         keywords: ['프로세스 개선', '사례 분석', '효율화', 'AI 도입', '변화 관리'],
         keywordsEn: ['Process Improvement', 'Case Analysis', 'Efficiency', 'AI Adoption', 'Change Management'],
         outline: [
@@ -353,7 +342,6 @@ export const categories: Category[] = [
         description: '텍스트, 이미지, 음성, 영상 등 다양한 모달리티를 활용하는 AI 기술을 학습합니다. DALL-E, Midjourney, Suno 등 도구의 실전 활용법을 다룹니다.',
         descriptionEn: 'Learn AI technologies utilizing text, image, voice, and video. Covers practical usage of DALL-E, Midjourney, Suno, and more.',
         icon: 'fa-solid fa-photo-film',
-        hours: 6,
         keywords: ['멀티모달', '이미지 생성', '음성 AI', '영상 AI', 'DALL-E'],
         keywordsEn: ['Multimodal', 'Image Generation', 'Voice AI', 'Video AI', 'DALL-E'],
         outline: [
@@ -381,7 +369,6 @@ export const categories: Category[] = [
         description: 'AI를 활용한 기획 업무 효율화. 기획서, 제안서, 보고서 작성에 프롬프트를 활용하는 실무 중심 과정입니다.',
         descriptionEn: 'Enhance planning tasks with AI. Practical course on using prompts for proposals, reports, and business plans.',
         icon: 'fa-solid fa-clipboard-list',
-        hours: 6,
         keywords: ['기획서', '제안서', '보고서', '문서 자동화', 'AI 기획'],
         keywordsEn: ['Planning', 'Proposals', 'Reports', 'Document Automation', 'AI Planning'],
         outline: [
@@ -409,7 +396,6 @@ export const categories: Category[] = [
         description: 'AI를 활용한 마케팅 콘텐츠 제작과 전략 수립. 카피라이팅, SNS 콘텐츠, 광고 문구를 프롬프트로 생성하는 실무 과정입니다.',
         descriptionEn: 'Marketing content creation and strategy with AI. Generate copywriting, social media content, and ad copy with prompts.',
         icon: 'fa-solid fa-bullhorn',
-        hours: 6,
         keywords: ['카피라이팅', 'SNS 마케팅', '광고', '콘텐츠 전략', 'AI 마케팅'],
         keywordsEn: ['Copywriting', 'SNS Marketing', 'Advertising', 'Content Strategy', 'AI Marketing'],
         outline: [
@@ -437,7 +423,6 @@ export const categories: Category[] = [
         description: '빅데이터 개념과 데이터 분석 기법을 실무에 적용하는 방법을 학습합니다. 데이터 기반 의사결정 역량을 강화합니다.',
         descriptionEn: 'Apply big data concepts and analytics techniques in practice. Strengthen data-driven decision-making capabilities.',
         icon: 'fa-solid fa-database',
-        hours: 8,
         keywords: ['빅데이터', '실무 적용', '데이터 파이프라인', '분석 기법', '의사결정'],
         keywordsEn: ['Big Data', 'Practice', 'Data Pipeline', 'Analytics', 'Decision Making'],
         outline: [
@@ -465,7 +450,6 @@ export const categories: Category[] = [
         description: '코딩 없이도 데이터를 시각화하고 분석할 수 있는 No-code/Low-code 도구를 학습합니다.',
         descriptionEn: 'Learn No-code/Low-code tools for data visualization and analysis without coding.',
         icon: 'fa-solid fa-wand-sparkles',
-        hours: 4,
         keywords: ['No-code', 'Low-code', '자동화', '시각화 도구', 'AI 도구'],
         keywordsEn: ['No-code', 'Low-code', 'Automation', 'Visualization Tools', 'AI Tools'],
         outline: [
@@ -493,7 +477,6 @@ export const categories: Category[] = [
         description: 'AI를 활용한 효과적인 마케팅 및 홍보 전략 수립 방법을 학습합니다. 타겟 분석부터 콘텐츠 마케팅까지.',
         descriptionEn: 'Learn effective marketing and PR strategies using AI, from target analysis to content marketing.',
         icon: 'fa-solid fa-bullseye',
-        hours: 6,
         keywords: ['마케팅 전략', '홍보', '브랜딩', 'AI 마케팅', '타겟팅'],
         keywordsEn: ['Marketing Strategy', 'PR', 'Branding', 'AI Marketing', 'Targeting'],
         outline: [
@@ -521,7 +504,6 @@ export const categories: Category[] = [
         description: '기업과 공공기관의 기획 마케팅 업무와 콘텐츠 창작에 AI를 활용하는 실무 과정입니다.',
         descriptionEn: 'Practical course on using AI for marketing planning and content creation in enterprise and public sectors.',
         icon: 'fa-solid fa-pen-nib',
-        hours: 6,
         keywords: ['콘텐츠 창작', '기획 마케팅', '공공기관', '기업', 'AI 콘텐츠'],
         keywordsEn: ['Content Creation', 'Marketing Planning', 'Public Sector', 'Enterprise', 'AI Content'],
         outline: [
@@ -549,7 +531,6 @@ export const categories: Category[] = [
         description: 'AI를 활용하여 신규사업 기획서와 세부 실행계획을 작성하는 방법을 학습합니다.',
         descriptionEn: 'Learn how to create new business proposals and detailed action plans using AI.',
         icon: 'fa-solid fa-file-contract',
-        hours: 8,
         keywords: ['사업 기획', '실행계획', '제안서', '사업계획서', 'AI 기획'],
         keywordsEn: ['Business Planning', 'Action Plan', 'Proposal', 'Business Plan', 'AI Planning'],
         outline: [
@@ -591,7 +572,6 @@ export const categories: Category[] = [
         description: '최신 생성형 AI 기술 동향을 파악하고, 이를 업무 혁신에 적용하는 방법을 학습합니다. GPT, Claude, Gemini 등 주요 모델의 특성과 활용 사례를 다룹니다.',
         descriptionEn: 'Understand the latest generative AI technology trends and learn how to apply them for business innovation.',
         icon: 'fa-solid fa-chart-line',
-        hours: 4,
         keywords: ['GPT', 'Claude', 'Gemini', '기술 트렌드', '업무 혁신'],
         keywordsEn: ['GPT', 'Claude', 'Gemini', 'Tech Trends', 'Business Innovation'],
         outline: [
@@ -619,7 +599,6 @@ export const categories: Category[] = [
         description: '프롬프트의 기본 구조부터 고급 기법까지 체계적으로 학습합니다. Chain-of-Thought, Self-consistency 등 최신 기법을 포함합니다.',
         descriptionEn: 'Systematically learn from basic prompt structures to advanced techniques including Chain-of-Thought and Self-consistency.',
         icon: 'fa-solid fa-graduation-cap',
-        hours: 8,
         keywords: ['Zero-shot', 'Few-shot', 'Chain-of-Thought', 'Self-consistency', '고급 기법'],
         keywordsEn: ['Zero-shot', 'Few-shot', 'Chain-of-Thought', 'Self-consistency', 'Advanced Techniques'],
         outline: [
@@ -651,7 +630,6 @@ export const categories: Category[] = [
         description: '교육 현장에서 AI를 효과적으로 통합하는 교수법을 설계하고 실행합니다. 수업 설계, 평가, 피드백에 AI를 활용하는 방법을 학습합니다.',
         descriptionEn: 'Design and implement AI-integrated teaching methods for lesson design, assessment, and feedback.',
         icon: 'fa-solid fa-chalkboard-user',
-        hours: 6,
         keywords: ['교수법', '수업 설계', 'AI 평가', '피드백', '교육 혁신'],
         keywordsEn: ['Teaching Methods', 'Lesson Design', 'AI Assessment', 'Feedback', 'Education Innovation'],
         outline: [
@@ -679,7 +657,6 @@ export const categories: Category[] = [
         description: 'LLM의 작동 원리를 이해하고 AI 생태계의 구조를 파악합니다. Transformer, 토큰화, 파인튜닝 등 핵심 개념을 학습합니다.',
         descriptionEn: 'Understand how LLMs work and the AI ecosystem structure, covering Transformer architecture, tokenization, and fine-tuning.',
         icon: 'fa-solid fa-microchip',
-        hours: 6,
         keywords: ['LLM', 'Transformer', '토큰화', '파인튜닝', 'AI 생태계'],
         keywordsEn: ['LLM', 'Transformer', 'Tokenization', 'Fine-tuning', 'AI Ecosystem'],
         outline: [
@@ -707,7 +684,6 @@ export const categories: Category[] = [
         description: '효과적인 데이터 수집 방법과 새로운 데이터 소스를 발굴하는 기법을 학습합니다. 공공데이터, API, 웹 스크래핑을 다룹니다.',
         descriptionEn: 'Learn effective data collection methods and techniques for discovering new data sources including public data, APIs, and web scraping.',
         icon: 'fa-solid fa-download',
-        hours: 4,
         keywords: ['데이터 수집', '웹 스크래핑', 'API', '공공데이터', '크롤링'],
         keywordsEn: ['Data Collection', 'Web Scraping', 'API', 'Public Data', 'Crawling'],
         outline: [
@@ -735,7 +711,6 @@ export const categories: Category[] = [
         description: '수집된 데이터를 효과적으로 분석하고 시각적으로 표현하는 방법을 학습합니다. 차트, 그래프, 인포그래픽, 대시보드를 다룹니다.',
         descriptionEn: 'Learn to analyze and visually present collected data using charts, graphs, infographics, and dashboards.',
         icon: 'fa-solid fa-chart-pie',
-        hours: 6,
         keywords: ['시각화', '차트', '그래프', '인포그래픽', '대시보드'],
         keywordsEn: ['Visualization', 'Charts', 'Graphs', 'Infographics', 'Dashboard'],
         outline: [
@@ -763,7 +738,6 @@ export const categories: Category[] = [
         description: '전문 강사로서의 포트폴리오를 체계적으로 구축하고, AI 시대에 맞는 강사 역량 개발 전략을 학습합니다.',
         descriptionEn: 'Systematically build an instructor portfolio and learn capability development strategies for the AI era.',
         icon: 'fa-solid fa-briefcase',
-        hours: 6,
         keywords: ['포트폴리오', '강사 브랜딩', '커리어', '역량 개발', '미래 전략'],
         keywordsEn: ['Portfolio', 'Instructor Branding', 'Career', 'Skill Development', 'Future Strategy'],
         outline: [
@@ -789,12 +763,6 @@ export const categories: Category[] = [
 
 // Helper: 전체 토픽 수
 export const totalTopics = categories.reduce((acc, cat) => acc + cat.topics.length, 0)
-
-// Helper: 전체 강의 시간
-export const totalHours = categories.reduce(
-  (acc, cat) => acc + cat.topics.reduce((sum, t) => sum + t.hours, 0),
-  0
-)
 
 // Helper: 카테고리 찾기
 export function findCategory(slug: string): Category | undefined {

@@ -19,10 +19,6 @@ export default function TopicCard({ topic, categorySlug, color }: Props) {
       <h4>{localizedField(topic, 'title')}</h4>
       <p>{localizedField(topic, 'description')}</p>
       <div className="topic-card-footer">
-        <span className="topic-hours">
-          <i className="fa-regular fa-clock" />
-          {topic.hours}{t('category.hours')}
-        </span>
         <Link to={`/${categorySlug}/${topic.slug}`} className="topic-detail-link">
           {t('category.viewDetail')} <i className="fa-solid fa-arrow-right" />
         </Link>
