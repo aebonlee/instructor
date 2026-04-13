@@ -3,7 +3,7 @@ import type { TopicContent } from './topicContent'
 
 const planningMarketingContent: TopicContent[] = [
   // ─────────────────────────────────────────────
-  // 1. 멀티모달 활용 (pm-multimodal, 6시간)
+  // 1. 멀티모달 활용 (pm-multimodal)
   // ─────────────────────────────────────────────
   {
     topicId: 'pm-multimodal',
@@ -265,7 +265,7 @@ const planningMarketingContent: TopicContent[] = [
   },
 
   // ─────────────────────────────────────────────
-  // 2. 기획역량 확대 (pm-planning, 6시간)
+  // 2. 기획역량 확대 (pm-planning)
   // ─────────────────────────────────────────────
   {
     topicId: 'pm-planning',
@@ -498,7 +498,7 @@ const planningMarketingContent: TopicContent[] = [
   },
 
   // ─────────────────────────────────────────────
-  // 3. 마케팅역량 확대 (pm-marketing-prompt, 6시간)
+  // 3. 마케팅역량 확대 (pm-marketing-prompt)
   // ─────────────────────────────────────────────
   {
     topicId: 'pm-marketing-prompt',
@@ -731,7 +731,7 @@ const planningMarketingContent: TopicContent[] = [
   },
 
   // ─────────────────────────────────────────────
-  // 4. 빅데이터 실무 적용 (pm-bigdata, 8시간)
+  // 4. 빅데이터 실무 적용 (pm-bigdata)
   // ─────────────────────────────────────────────
   {
     topicId: 'pm-bigdata',
@@ -964,7 +964,7 @@ const planningMarketingContent: TopicContent[] = [
   },
 
   // ─────────────────────────────────────────────
-  // 5. No-code/Low-code (pm-nocode, 4시간)
+  // 5. No-code/Low-code (pm-nocode)
   // ─────────────────────────────────────────────
   {
     topicId: 'pm-nocode',
@@ -1197,7 +1197,7 @@ const planningMarketingContent: TopicContent[] = [
   },
 
   // ─────────────────────────────────────────────
-  // 6. 마케팅과 홍보전략 (pm-strategy, 6시간)
+  // 6. 마케팅과 홍보전략 (pm-strategy)
   // ─────────────────────────────────────────────
   {
     topicId: 'pm-strategy',
@@ -1430,7 +1430,7 @@ const planningMarketingContent: TopicContent[] = [
   },
 
   // ─────────────────────────────────────────────
-  // 7. 콘텐츠 창작업무 (pm-content, 6시간)
+  // 7. 콘텐츠 창작업무 (pm-content)
   // ─────────────────────────────────────────────
   {
     topicId: 'pm-content',
@@ -1663,7 +1663,7 @@ const planningMarketingContent: TopicContent[] = [
   },
 
   // ─────────────────────────────────────────────
-  // 8. 신규사업 기획서 (pm-business-plan, 8시간)
+  // 8. 신규사업 기획서 (pm-business-plan)
   // ─────────────────────────────────────────────
   {
     topicId: 'pm-business-plan',

@@ -3,7 +3,7 @@ import type { TopicContent } from './topicContent'
 
 const aiBasicsContent: TopicContent[] = [
   // ─────────────────────────────────────────────
-  // 1. 프롬프트 엔지니어링 (ab-prompt, 6시간)
+  // 1. 프롬프트 엔지니어링 (ab-prompt)
   // ─────────────────────────────────────────────
   {
     topicId: 'ab-prompt',
@@ -313,7 +313,7 @@ const aiBasicsContent: TopicContent[] = [
   },
 
   // ─────────────────────────────────────────────
-  // 2. 생성형AI 윤리와 법적쟁점, AI 사용 가이드 (ab-ethics, 4시간)
+  // 2. 생성형AI 윤리와 법적쟁점, AI 사용 가이드 (ab-ethics)
   // ─────────────────────────────────────────────
   {
     topicId: 'ab-ethics',
@@ -621,7 +621,7 @@ const aiBasicsContent: TopicContent[] = [
   },
 
   // ─────────────────────────────────────────────
-  // 3. 나만의 비서, 종합 실습 및 Q&A (ab-assistant, 8시간)
+  // 3. 나만의 비서, 종합 실습 및 Q&A (ab-assistant)
   // ─────────────────────────────────────────────
   {
     topicId: 'ab-assistant',

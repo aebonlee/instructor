@@ -3,7 +3,7 @@ import type { TopicContent } from './topicContent'
 
 const instructorTrainingContent: TopicContent[] = [
   // ─────────────────────────────────────────────
-  // 1. AI 기술 트렌드 (it-trends, 4시간)
+  // 1. AI 기술 트렌드 (it-trends)
   // ─────────────────────────────────────────────
   {
     topicId: 'it-trends',
@@ -243,7 +243,7 @@ const instructorTrainingContent: TopicContent[] = [
   },
 
   // ─────────────────────────────────────────────
-  // 2. 프롬프트 기초~고급 (it-prompt-full, 8시간)
+  // 2. 프롬프트 기초~고급 (it-prompt-full)
   // ─────────────────────────────────────────────
   {
     topicId: 'it-prompt-full',
@@ -512,7 +512,7 @@ const instructorTrainingContent: TopicContent[] = [
   },
 
   // ─────────────────────────────────────────────
-  // 3. AI 통합 교수법 (it-teaching, 6시간)
+  // 3. AI 통합 교수법 (it-teaching)
   // ─────────────────────────────────────────────
   {
     topicId: 'it-teaching',
@@ -745,7 +745,7 @@ const instructorTrainingContent: TopicContent[] = [
   },
 
   // ─────────────────────────────────────────────
-  // 4. LLM 작동원리 (it-llm, 6시간)
+  // 4. LLM 작동원리 (it-llm)
   // ─────────────────────────────────────────────
   {
     topicId: 'it-llm',
@@ -978,7 +978,7 @@ const instructorTrainingContent: TopicContent[] = [
   },
 
   // ─────────────────────────────────────────────
-  // 5. 데이터 수집/발굴 (it-data-collection, 4시간)
+  // 5. 데이터 수집/발굴 (it-data-collection)
   // ─────────────────────────────────────────────
   {
     topicId: 'it-data-collection',
@@ -1211,7 +1211,7 @@ const instructorTrainingContent: TopicContent[] = [
   },
 
   // ─────────────────────────────────────────────
-  // 6. 데이터 분석 및 시각화 (it-data-viz, 6시간)
+  // 6. 데이터 분석 및 시각화 (it-data-viz)
   // ─────────────────────────────────────────────
   {
     topicId: 'it-data-viz',
@@ -1444,7 +1444,7 @@ const instructorTrainingContent: TopicContent[] = [
   },
 
   // ─────────────────────────────────────────────
-  // 7. 강사 포트폴리오 (it-portfolio, 6시간)
+  // 7. 강사 포트폴리오 (it-portfolio)
   // ─────────────────────────────────────────────
   {
     topicId: 'it-portfolio',
