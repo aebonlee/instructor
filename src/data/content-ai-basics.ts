@@ -164,8 +164,6 @@ const aiBasicsContent: TopicContent[] = [
         title: '나만의 프롬프트 템플릿 만들기',
         titleEn: 'Create Your Own Prompt Templates',
         type: 'individual',
-        duration: '40분',
-        durationEn: '40 minutes',
         description:
           '개인 업무에서 자주 반복되는 작업 3가지를 선정하고, 각각에 대해 5대 구성 요소(역할, 맥락, 지시, 입력, 출력 형식)를 포함한 프롬프트 템플릿을 작성합니다.',
         descriptionEn:
@@ -190,8 +188,6 @@ const aiBasicsContent: TopicContent[] = [
         title: 'Zero-shot vs Few-shot 비교 실험',
         titleEn: 'Zero-shot vs Few-shot Comparison Experiment',
         type: 'group',
-        duration: '50분',
-        durationEn: '50 minutes',
         description:
           '동일한 작업에 대해 Zero-shot과 Few-shot(1-shot, 3-shot, 5-shot) 프롬프트를 각각 작성하고 결과를 비교하여 최적의 예시 수를 분석합니다.',
         descriptionEn:
@@ -216,8 +212,6 @@ const aiBasicsContent: TopicContent[] = [
         title: '프롬프트 해커톤: 실무 과제 해결',
         titleEn: 'Prompt Hackathon: Solving Real Work Challenges',
         type: 'project',
-        duration: '90분',
-        durationEn: '90 minutes',
         description:
           '팀별로 실제 업무에서 겪는 문제를 선정하고, 프롬프트 엔지니어링 기법을 총동원하여 AI 기반 해결책을 설계하는 미니 해커톤입니다.',
         descriptionEn:
@@ -480,8 +474,6 @@ const aiBasicsContent: TopicContent[] = [
         title: 'AI 윤리 딜레마 시나리오 토론',
         titleEn: 'AI Ethics Dilemma Scenario Debate',
         type: 'group',
-        duration: '50분',
-        durationEn: '50 minutes',
         description:
           '팀별로 AI 윤리 딜레마 시나리오를 배정받아 찬성/반대 입장을 나누고, 근거를 준비하여 토론을 진행합니다. 윤리적 판단 역량과 논리적 사고력을 동시에 훈련합니다.',
         descriptionEn:
@@ -506,8 +498,6 @@ const aiBasicsContent: TopicContent[] = [
         title: '우리 조직의 AI 사용 가이드라인 초안 작성',
         titleEn: 'Drafting AI Usage Guidelines for Our Organization',
         type: 'group',
-        duration: '60분',
-        durationEn: '60 minutes',
         description:
           '팀별로 가상의 조직(또는 실제 소속 조직)을 대상으로 AI 사용 가이드라인 초안을 작성합니다. 허용 범위, 금지 사항, 데이터 규칙, 검증 절차 등을 포함하는 실전 문서를 만듭니다.',
         descriptionEn:
@@ -532,8 +522,6 @@ const aiBasicsContent: TopicContent[] = [
         title: 'AI 생성 콘텐츠 저작권 체크리스트 실습',
         titleEn: 'AI-Generated Content Copyright Checklist Practice',
         type: 'individual',
-        duration: '30분',
-        durationEn: '30 minutes',
         description:
           '실제 업무에서 AI가 생성한 콘텐츠(텍스트, 이미지)를 상업적으로 활용할 때 확인해야 할 저작권 체크리스트를 작성하고, 사례에 적용하여 검증합니다.',
         descriptionEn:
@@ -794,8 +782,6 @@ const aiBasicsContent: TopicContent[] = [
         title: '나의 업무 워크플로우 맵 작성',
         titleEn: 'Create My Work Workflow Map',
         type: 'individual',
-        duration: '50분',
-        durationEn: '50 minutes',
         description:
           '개인의 일일 업무를 시간대별로 기록하고, AI가 보조할 수 있는 영역을 식별하여 워크플로우 맵을 완성합니다. 이 맵은 이후 AI 비서 설계의 기초 자료로 활용됩니다.',
         descriptionEn:
@@ -820,8 +806,6 @@ const aiBasicsContent: TopicContent[] = [
         title: '맞춤형 AI 비서 구축 실습',
         titleEn: 'Customized AI Assistant Building Practice',
         type: 'individual',
-        duration: '90분',
-        durationEn: '90 minutes',
         description:
           '워크플로우 분석 결과를 바탕으로 ChatGPT Custom Instructions 또는 Claude System Prompt를 활용하여 개인 맞춤형 AI 비서를 실제로 구축합니다.',
         descriptionEn:
@@ -846,8 +830,6 @@ const aiBasicsContent: TopicContent[] = [
         title: 'AI 비서 + 자동화 연동 팀 프로젝트',
         titleEn: 'AI Assistant + Automation Integration Team Project',
         type: 'project',
-        duration: '120분',
-        durationEn: '120 minutes',
         description:
           '팀별로 특정 업무 시나리오를 선정하고, AI 비서와 자동화 도구를 연동한 통합 워크플로우를 설계·구현하는 종합 프로젝트입니다.',
         descriptionEn:

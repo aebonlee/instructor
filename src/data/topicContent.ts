@@ -17,8 +17,6 @@ export interface PracticeActivity {
   title: string
   titleEn: string
   type: 'individual' | 'group' | 'project'
-  duration: string        // e.g. "30분", "1시간"
-  durationEn: string
   description: string
   descriptionEn: string
   steps: string[]

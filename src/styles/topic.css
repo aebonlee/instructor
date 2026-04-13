@@ -147,10 +147,6 @@
 .practice-type.type-individual { background: #DBEAFE; color: #1E40AF; }
 .practice-type.type-group { background: #D1FAE5; color: #065F46; }
 .practice-type.type-project { background: #FDE68A; color: #92400E; }
-.practice-duration {
-  font-size: 13px; color: var(--text-light);
-  display: flex; align-items: center; gap: 6px;
-}
 .practice-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
 .practice-card > p { font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 16px; }
 

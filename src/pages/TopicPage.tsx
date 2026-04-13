@@ -192,9 +192,6 @@ export default function TopicPage() {
                     <div key={i} className="practice-card">
                       <div className="practice-header">
                         <span className={`practice-type type-${p.type}`}>{practiceTypeLabel(p.type)}</span>
-                        <span className="practice-duration">
-                          <i className="fa-regular fa-clock" /> {lang === 'en' ? p.durationEn : p.duration}
-                        </span>
                       </div>
                       <h3>{lang === 'en' ? p.titleEn : p.title}</h3>
                       <p>{lang === 'en' ? p.descriptionEn : p.description}</p>
