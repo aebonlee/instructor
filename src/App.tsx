@@ -14,7 +14,7 @@ const Login = lazy(() => import('./pages/Login'))
 const Register = lazy(() => import('./pages/Register'))
 const ForgotPassword = lazy(() => import('./pages/ForgotPassword'))
 const MyPage = lazy(() => import('./pages/MyPage'))
-const AdminPage = lazy(() => import('./pages/AdminPage'))
+const AdminDashboard = lazy(() => import('./pages/admin/AdminDashboard'))
 const CommunityPage = lazy(() => import('./pages/CommunityPage'))
 const BoardPage = lazy(() => import('./pages/BoardPage'))
 const PostWritePage = lazy(() => import('./pages/PostWritePage'))
@@ -74,7 +74,7 @@ function AppLayout() {
           <Route path="/register" element={<LazyRoute element={<Register />} />} />
           <Route path="/forgot-password" element={<LazyRoute element={<ForgotPassword />} />} />
           <Route path="/my" element={<LazyRoute element={<MyPage />} />} />
-          <Route path="/admin" element={<AdminRoute><LazyRoute element={<AdminPage />} /></AdminRoute>} />
+          <Route path="/admin" element={<AdminRoute><LazyRoute element={<AdminDashboard />} /></AdminRoute>} />
           <Route path="/site-intro" element={<LazyRoute element={<SiteIntroPage />} />} />
           <Route path="/about" element={<LazyRoute element={<AboutPage />} />} />
           <Route path="/faq" element={<LazyRoute element={<FaqPage />} />} />
