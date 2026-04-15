@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from 'react'
 import { supabase, isSupabaseEnabled, TABLES } from '../config/supabase'
+import { ADMIN_EMAILS } from '../config/admin'
 import type { User, Session } from '@supabase/supabase-js'
 
 interface AuthContextType {
@@ -17,8 +18,6 @@ interface AuthContextType {
 }
 
 const AuthContext = createContext<AuthContextType | null>(null)
-
-const ADMIN_EMAILS = ['aebonlee@gmail.com']
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
