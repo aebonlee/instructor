@@ -3,6 +3,7 @@ import { supabase, isSupabaseEnabled, TABLES } from '../config/supabase'
 import { ADMIN_EMAILS } from '../config/admin'
 import type { User, Session } from '@supabase/supabase-js'
 import { useIdleTimeout } from '../hooks/useIdleTimeout';
+import ProfileCompleteModal from '../components/ProfileCompleteModal';
 
 interface AuthContextType {
   user: User | null
@@ -41,6 +42,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       }, { onConflict: 'id' })
     } catch {}
   }, [])
+
+  const [_userProfile, _setUserProfile] = useState<any>(null);
+
+  // ─── 프로필 완성 체크용 user_profiles 로드 ───
+  const _loadUserProfile = useCallback(async (uid: string) => {
+    try {
+      const { data } = await supabase!.from('user_profiles').select('name,phone').eq('id', uid).maybeSingle();
+      _setUserProfile(data);
+    } catch { _setUserProfile(null); }
+  }, []);
 
   useEffect(() => {
     if (!isSupabaseEnabled() || !supabase) {
@@ -116,9 +127,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   useIdleTimeout({
   enabled: !!user,
   onTimeout: () => {
-  supabase.auth.signOut();
+  supabase?.auth.signOut();
   },
   });
+  const refreshProfile = useCallback(async () => { if (user) await _loadUserProfile(user.id); }, [user, _loadUserProfile]);
+  const needsProfileCompletion = !!user && !!_userProfile && (!_userProfile.name || !_userProfile.phone);
+
 
   return (
     <AuthContext.Provider value={{
@@ -126,6 +140,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       signInWithEmail, signUpWithEmail, signInWithGoogle, signInWithKakao, signOut, resetPassword,
     }}>
       {children}
+      {needsProfileCompletion && user && (
+        <ProfileCompleteModal user={user} onComplete={refreshProfile} />
+      )}
     </AuthContext.Provider>
   )
 }
