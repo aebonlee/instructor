@@ -2,6 +2,7 @@ import { createContext, useContext, useState, useEffect, useCallback, type React
 import { supabase, isSupabaseEnabled, TABLES } from '../config/supabase'
 import { ADMIN_EMAILS } from '../config/admin'
 import type { User, Session } from '@supabase/supabase-js'
+import { useIdleTimeout } from '../hooks/useIdleTimeout';
 
 interface AuthContextType {
   user: User | null
@@ -59,6 +60,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setUser(s?.user ?? null)
       if (s?.user) upsertUser(s.user)
     })
+
+
+  // 10분 무동작 세션 타임아웃
+  useIdleTimeout({
+    enabled: !!user,
+    onTimeout: () => {
+      supabase.auth.signOut();
+    },
+  });
 
     return () => subscription.unsubscribe()
   }, [upsertUser])
