@@ -61,15 +61,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       if (s?.user) upsertUser(s.user)
     })
 
-
-  // 10분 무동작 세션 타임아웃
-  useIdleTimeout({
-    enabled: !!user,
-    onTimeout: () => {
-      supabase.auth.signOut();
-    },
-  });
-
     return () => subscription.unsubscribe()
   }, [upsertUser])
 
@@ -119,6 +110,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     })
     return { error }
   }
+
+
+  // 10분 무동작 세션 타임아웃
+  useIdleTimeout({
+  enabled: !!user,
+  onTimeout: () => {
+  supabase.auth.signOut();
+  },
+  });
 
   return (
     <AuthContext.Provider value={{
