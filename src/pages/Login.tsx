@@ -8,7 +8,7 @@ export default function Login() {
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
-  const { signInWithEmail, signInWithGoogle, signInWithKakao } = useAuth()
+  const { signInWithEmail, signInWithGoogle, signInWithKakao, authError, clearAuthError } = useAuth()
   const { t } = useLanguage()
   const navigate = useNavigate()
 
@@ -28,7 +28,7 @@ export default function Login() {
         <h1>{t('auth.login')}</h1>
         <p className="auth-subtitle">AI Instructor</p>
 
-        {error && <p className="form-error" style={{ textAlign: 'center', marginBottom: 16 }}>{error}</p>}
+        {(error || authError) && <p className="form-error" style={{ textAlign: 'center', marginBottom: 16 }}>{error || authError}</p>}
 
         <form className="auth-form" onSubmit={handleSubmit}>
           <div className="form-group">
@@ -51,11 +51,11 @@ export default function Login() {
         <div className="auth-divider">{t('auth.or')}</div>
 
         <div className="oauth-buttons">
-          <button className="oauth-btn" onClick={signInWithGoogle}>
+          <button className="oauth-btn" onClick={() => { clearAuthError(); signInWithGoogle(); }}>
             <i className="fa-brands fa-google" style={{ color: '#4285F4' }} />
             {t('auth.googleLogin')}
           </button>
-          <button className="oauth-btn" onClick={signInWithKakao}>
+          <button className="oauth-btn" onClick={() => { clearAuthError(); signInWithKakao(); }}>
             <i className="fa-solid fa-comment" style={{ color: '#FEE500' }} />
             {t('auth.kakaoLogin')}
           </button>
