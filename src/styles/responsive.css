@@ -12,6 +12,12 @@
 /* Mobile */
 @media (max-width: 768px) {
   :root { --nav-height: 64px; }
+
+  /* Touch target minimum size */
+  .btn, .nav-login-btn, button:not(.mobile-toggle) {
+      min-height: 44px;
+  }
+
   .container { padding: 0 16px; }
   .section { padding: 48px 0; }
   .section-header { margin-bottom: 40px; }
